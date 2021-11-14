@@ -5,18 +5,17 @@
 import os
 import numpy as np
 
-os.chdir('C:/Users/Profil/Documents/adventofcode')
+os.chdir('C:/Users/Profil/Documents/adventofcode/2020/advent-of-code-2020/')
 #os.chdir('C:/Users/vrsom/Seafile/adventofcode')
 
 # open input
 f = open('input14.txt','r')
 lines  = f.readlines()
 
-
 # test data
 #lines = ['mask = XXXXXXXXXXXXXXXXXXXXXXXXXXXXX1XXXX0X\n', 'mem[8] = 11\n', 'mem[7] = 101\n', 'mem[8] = 0\n']
 
-# array of zeros
+# empty dict
 all_results = {}
 
 for line in lines:
@@ -49,7 +48,7 @@ for line in lines:
                 # change value to mask
                 result = mask[i] + result # append to left of string
                 
-        # convert to decimal and sacve to specific memory address
+        # convert to decimal and save to specific memory address
         all_results[mem] = int(result,2) 
         
 # sum up 
