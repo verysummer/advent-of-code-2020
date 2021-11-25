@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# AoC 2020 Day 14
+# AoC 2020 Day 15
 
 import os
 import numpy as np
